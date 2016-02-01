@@ -4,4 +4,5 @@
 这个项目提供最基本的二维码扫描界面和扫描信息获取解析的基本结构，具有非常高的可定制性。
 #怎样使用
 打开工程将`QRCodeScanVC.h`和`QRCodeScanVC.m`拖入你的工程（ps:记得导入`AVFoundation.framework`），
+在`QRCodeScanVC`中你可以通过`BOXWIDTH`和`BOXHEIGHT`两个宏来修改扫描区域的大小，
 然后你可以在`QRCodeScanVC`中定制你自己需要界面。
