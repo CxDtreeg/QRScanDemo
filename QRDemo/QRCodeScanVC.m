@@ -150,14 +150,17 @@
         //在这里获取解析出来的值
         //打印扫描出来的字符串
         NSLog(@"%@",[metadataObj stringValue]);
-        UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"显示" message:[metadataObj stringValue] preferredStyle:UIAlertControllerStyleAlert];
-        __weak typeof(self) weakSelf = self;
-        UIAlertAction * action1 = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-            [weakSelf.captureSession startRunning];
-        }];
-        [alert addAction:action1];
         [_captureSession stopRunning];//停止运行
-        [self presentViewController:alert animated:YES completion:nil];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"显示" message:[metadataObj stringValue] preferredStyle:UIAlertControllerStyleAlert];
+            __weak typeof(self) weakSelf = self;
+            UIAlertAction * action1 = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+                [weakSelf.captureSession startRunning];
+            }];
+            [alert addAction:action1];
+            [self presentViewController:alert animated:YES completion:nil];
+        });
         
     }
 }
