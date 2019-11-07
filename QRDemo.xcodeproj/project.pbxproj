@@ -124,7 +124,6 @@
 				TargetAttributes = {
 					4DD5B9FB1C55C435001B7BA3 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = G3T9TULVG3;
 					};
 				};
 			};
@@ -279,7 +278,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = G3T9TULVG3;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = QRDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CxDtreeg.QRDemo;
@@ -291,7 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = G3T9TULVG3;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = QRDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CxDtreeg.QRDemo;
