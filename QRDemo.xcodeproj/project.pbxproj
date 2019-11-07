@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		491D67622373B04F00FCB305 /* GenQRCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 491D67612373B04F00FCB305 /* GenQRCodeVC.m */; };
+		49DA4DE22372BFC800F6CB5E /* CDQRCodeScanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DA4DE12372BFC800F6CB5E /* CDQRCodeScanVC.m */; };
 		4DD5BA011C55C435001B7BA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD5BA001C55C435001B7BA3 /* main.m */; };
 		4DD5BA041C55C435001B7BA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD5BA031C55C435001B7BA3 /* AppDelegate.m */; };
 		4DD5BA071C55C435001B7BA3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD5BA061C55C435001B7BA3 /* ViewController.m */; };
@@ -14,10 +16,13 @@
 		4DD5BA0C1C55C435001B7BA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD5BA0B1C55C435001B7BA3 /* Assets.xcassets */; };
 		4DD5BA0F1C55C435001B7BA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DD5BA0D1C55C435001B7BA3 /* LaunchScreen.storyboard */; };
 		4DD5BA171C55C44F001B7BA3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD5BA161C55C44F001B7BA3 /* AVFoundation.framework */; };
-		4DD5BA1D1C55F112001B7BA3 /* QRCodeScanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD5BA1C1C55F112001B7BA3 /* QRCodeScanVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		491D67602373B04F00FCB305 /* GenQRCodeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenQRCodeVC.h; sourceTree = "<group>"; };
+		491D67612373B04F00FCB305 /* GenQRCodeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenQRCodeVC.m; sourceTree = "<group>"; };
+		49DA4DE02372BFC800F6CB5E /* CDQRCodeScanVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDQRCodeScanVC.h; sourceTree = "<group>"; };
+		49DA4DE12372BFC800F6CB5E /* CDQRCodeScanVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDQRCodeScanVC.m; sourceTree = "<group>"; };
 		4DD5B9FC1C55C435001B7BA3 /* QRDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD5BA001C55C435001B7BA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4DD5BA021C55C435001B7BA3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -29,8 +34,6 @@
 		4DD5BA0E1C55C435001B7BA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DD5BA101C55C435001B7BA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DD5BA161C55C44F001B7BA3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		4DD5BA1B1C55F112001B7BA3 /* QRCodeScanVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeScanVC.h; sourceTree = "<group>"; };
-		4DD5BA1C1C55F112001B7BA3 /* QRCodeScanVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeScanVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +70,10 @@
 			children = (
 				4DD5BA021C55C435001B7BA3 /* AppDelegate.h */,
 				4DD5BA031C55C435001B7BA3 /* AppDelegate.m */,
-				4DD5BA1B1C55F112001B7BA3 /* QRCodeScanVC.h */,
-				4DD5BA1C1C55F112001B7BA3 /* QRCodeScanVC.m */,
+				49DA4DE02372BFC800F6CB5E /* CDQRCodeScanVC.h */,
+				49DA4DE12372BFC800F6CB5E /* CDQRCodeScanVC.m */,
+				491D67602373B04F00FCB305 /* GenQRCodeVC.h */,
+				491D67612373B04F00FCB305 /* GenQRCodeVC.m */,
 				4DD5BA051C55C435001B7BA3 /* ViewController.h */,
 				4DD5BA061C55C435001B7BA3 /* ViewController.m */,
 				4DD5BA081C55C435001B7BA3 /* Main.storyboard */,
@@ -119,6 +124,7 @@
 				TargetAttributes = {
 					4DD5B9FB1C55C435001B7BA3 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = G3T9TULVG3;
 					};
 				};
 			};
@@ -127,6 +133,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -158,10 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				491D67622373B04F00FCB305 /* GenQRCodeVC.m in Sources */,
 				4DD5BA071C55C435001B7BA3 /* ViewController.m in Sources */,
-				4DD5BA1D1C55F112001B7BA3 /* QRCodeScanVC.m in Sources */,
 				4DD5BA041C55C435001B7BA3 /* AppDelegate.m in Sources */,
 				4DD5BA011C55C435001B7BA3 /* main.m in Sources */,
+				49DA4DE22372BFC800F6CB5E /* CDQRCodeScanVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,9 +279,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G3T9TULVG3;
 				INFOPLIST_FILE = QRDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CxDtreeg.QRDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CxDtreeg.QRDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -282,9 +291,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G3T9TULVG3;
 				INFOPLIST_FILE = QRDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CxDtreeg.QRDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CxDtreeg.QRDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

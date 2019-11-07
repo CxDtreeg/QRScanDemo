@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
-#import "QRCodeScanVC.h"
+#import "CDQRCodeScanVC.h"
 
 #define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
@@ -34,7 +34,7 @@
     UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.backgroundColor = [UIColor blueColor];
     button.frame = CGRectMake(0, 50, 100, 100);
-    [button addTarget:self action:@selector(button) forControlEvents:UIControlEventTouchUpInside];
+    [button addTarget:self action:@selector(scanQRButtonPressed) forControlEvents:UIControlEventTouchUpInside];
     [button setTitle:@"扫描二维码" forState:UIControlStateNormal];
     [self.view addSubview:button];
     
@@ -103,9 +103,10 @@
 }
 
 #pragma mark - 扫描二维码按钮点击
-- (void)button{
-    QRCodeScanVC * vc = [[QRCodeScanVC alloc] init];
-    [self presentViewController:vc animated:YES completion:nil];
+- (void)scanQRButtonPressed{
+    CDQRCodeScanVC *vc = [[CDQRCodeScanVC alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self presentViewController:nav animated:YES completion:nil];
 }
 
 
