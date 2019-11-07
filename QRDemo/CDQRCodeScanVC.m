@@ -40,7 +40,13 @@
     self.view.backgroundColor = [UIColor whiteColor];
     UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"相册" style:UIBarButtonItemStylePlain target:self action:@selector(openPhotoAlbumEvent:)];
     self.navigationItem.rightBarButtonItem = rightBarButtonItem;
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(backPrevVC)];
+    self.navigationItem.leftBarButtonItem = backItem;
     [self addMask];
+}
+
+- (void)backPrevVC {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - 设置遮罩层
